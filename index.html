@@ -1,97 +1,282 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nettadresse.no — Alt om URLer, domener og struktur</title>
-<meta name="description" content="Komplett guide til nettadresser: URL-struktur, domenevalg, redirects, DNS og SEO-vennlige URLer.">
-<meta property="og:title" content="Nettadresse.no — Alt om URLer, domener og struktur"><meta property="og:description" content="Komplett guide til nettadresser: URL-struktur, domenevalg, redirects, DNS og SEO-vennlige URLer."><meta property="og:type" content="website"><meta property="og:url" content="https://nettadresse.no"><meta property="og:locale" content="nb_NO">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nettadresse.no — Norges største guide til domener og nettadresser</title>
+<meta name="description" content="Alt om nettadresser og domener: hva er et domene, hvordan velge domenenavn, DNS, URL-struktur, HTTPS, e-post, SEO og mer. Norges mest komplette kunnskapsbase.">
+<meta name="keywords" content="nettadresse, domene, domenenavn, DNS, URL, webadresse, .no domene, kjøpe domene, URL-struktur, HTTPS, SSL, redirect, canonical, e-post domene, TLD, ccTLD, WHOIS, nameserver">
+<meta property="og:title" content="Nettadresse.no — Norges største guide til domener og nettadresser">
+<meta property="og:description" content="Alt om nettadresser og domener. 50+ artikler. Norges mest komplette kunnskapsbase.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://nettadresse.no"><meta property="og:locale" content="nb_NO">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://nettadresse.no">
 <link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,600;1,400&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;300;400;500;600;700;800&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--d:#030c08;--s1:#061a10;--s2:#0a2418;--c:#10b981;--cg:rgba(16,185,129,.25);--c10:rgba(16,185,129,.1);--c06:rgba(16,185,129,.06);--c2:#34d399;--w:#fff;--w5:rgba(255,255,255,.5);--w3:rgba(255,255,255,.3);--w15:rgba(255,255,255,.15);--w08:rgba(255,255,255,.08);--w04:rgba(255,255,255,.04);--fh:'DM Sans',system-ui,sans-serif;--fd:'Newsreader',Georgia,serif;--fm:'Fira Code',monospace;--eo:cubic-bezier(.16,1,.3,1)}
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px;overflow-x:hidden}body{font-family:var(--fh);color:var(--w);background:var(--d);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}::selection{background:var(--c);color:#fff}.ctn{max-width:1400px;margin:0 auto;padding:0 clamp(1.5rem,5vw,4rem)}
-.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.2rem 0;transition:all .6s var(--eo)}.nav.s{background:rgba(3,12,8,.9);backdrop-filter:blur(40px);padding:.6rem 0;border-bottom:1px solid var(--w08)}.nav__i{display:flex;align-items:center;justify-content:space-between}.nav__l{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:#fff;font-weight:800;font-size:1.15rem;letter-spacing:-.03em}.nav__lm{width:36px;height:36px;background:linear-gradient(135deg,var(--c),var(--c2));border-radius:10px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 30px var(--cg)}.nav__lm svg{width:18px;height:18px}
-.nav__k{display:flex;list-style:none;gap:.3rem;align-items:center}.nav__k>li{position:relative}.nav__k>li>a{color:var(--w3);text-decoration:none;font-size:.8rem;font-weight:500;transition:all .3s;display:flex;align-items:center;gap:.4rem;padding:.5rem .8rem;border-radius:8px}.nav__k>li>a:hover{color:var(--c);background:var(--w04)}.nav__k>li>a svg{width:14px;height:14px;opacity:.5;flex-shrink:0}
-.nav__dd{position:absolute;top:calc(100% + .5rem);left:50%;transform:translateX(-50%) translateY(8px);opacity:0;visibility:hidden;background:var(--s1);border:1px solid var(--w08);border-radius:16px;padding:.8rem;min-width:260px;transition:all .3s var(--eo);box-shadow:0 20px 60px rgba(0,0,0,.5);z-index:100}.nav__k>li:hover .nav__dd{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}.nav__dd a{display:flex;align-items:center;gap:.8rem;padding:.65rem 1rem;border-radius:10px;text-decoration:none;color:var(--w5);font-size:.82rem;transition:all .2s}.nav__dd a:hover{background:var(--w04);color:#fff}.nav__dd-tx{font-size:.68rem;color:var(--w3);display:block;margin-top:.1rem}
-.nav__h{display:none;background:0;border:0;cursor:pointer;width:30px;height:30px;position:relative}.nav__h span{position:absolute;left:3px;width:24px;height:1.5px;background:#fff;transition:all .3s}.nav__h span:nth-child(1){top:9px}.nav__h span:nth-child(2){top:15px}.nav__h span:nth-child(3){top:21px}.nav__h.o span:nth-child(1){top:15px;transform:rotate(45deg)}.nav__h.o span:nth-child(2){opacity:0}.nav__h.o span:nth-child(3){top:15px;transform:rotate(-45deg)}
-.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:12rem 0 8rem}.hero__bg{position:absolute;inset:0}.hero__gr{position:absolute;inset:0;background:radial-gradient(ellipse 55% 45% at 30% 35%,rgba(16,185,129,.05),transparent 60%)}.hero__noise{position:absolute;inset:0;opacity:.012;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-.hero__c{position:relative;z-index:2;max-width:720px}
-.hero__tag{display:inline-flex;align-items:center;gap:.6rem;padding:.5rem 1.2rem;border-radius:100px;border:1px solid var(--w08);background:var(--w04);font-family:var(--fm);font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:2.5rem;opacity:0;animation:hUp 1s var(--eo) .2s forwards}.hero__tag::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--c);box-shadow:0 0 10px var(--c);animation:blink 2s ease-in-out infinite}@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-.hero__t{font-weight:800;font-size:clamp(3.5rem,6vw,5.5rem);line-height:.92;letter-spacing:-.05em;margin-bottom:2rem;opacity:0;animation:hUp 1s var(--eo) .4s forwards}.hero__ta{display:block;background:linear-gradient(135deg,var(--c2),var(--c));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero__p{font-size:clamp(1rem,1.5vw,1.15rem);color:var(--w5);max-width:560px;line-height:1.85;font-weight:300;margin-bottom:3rem;opacity:0;animation:hUp 1s var(--eo) .6s forwards}
-.hero__btns{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:hUp 1s var(--eo) .8s forwards}
-.bt{display:inline-flex;align-items:center;gap:.5rem;padding:1rem 2.5rem;border-radius:100px;font-family:var(--fh);font-size:.9rem;font-weight:700;text-decoration:none;transition:all .4s var(--eo);border:0;letter-spacing:-.01em}.bt svg{width:16px;height:16px;transition:transform .3s}.bt:hover svg{transform:translateX(4px)}.bt--c{background:var(--c);color:#fff;box-shadow:0 0 40px rgba(16,185,129,.15)}.bt--c:hover{transform:translateY(-3px);box-shadow:0 8px 50px var(--cg)}.bt--g{background:var(--s2);color:var(--w5);border:1px solid var(--w08)}.bt--g:hover{color:#fff;transform:translateY(-3px)}
-@keyframes hUp{from{opacity:0;transform:translateY(50px)}to{opacity:1;transform:translateY(0)}}
-.ticker{border-top:1px solid var(--w04);border-bottom:1px solid var(--w04);padding:1.2rem 0;overflow:hidden}.ticker__wrap{display:flex;animation:tickS 50s linear infinite;width:max-content}.ticker__item{display:flex;align-items:center;gap:2rem;padding:0 2rem;white-space:nowrap;font-size:.85rem;font-weight:500;color:var(--w3)}.ticker__dot{width:4px;height:4px;border-radius:50%;background:var(--c);flex-shrink:0}@keyframes tickS{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.sec{padding:clamp(6rem,12vw,10rem) 0;position:relative}.sec__lb{font-family:var(--fm);font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--c);font-weight:500;margin-bottom:1.2rem}.sec__hd{font-weight:800;font-size:clamp(2.5rem,5vw,4.2rem);letter-spacing:-.04em;line-height:1;margin-bottom:1.5rem}.sec__hd em{font-family:var(--fd);font-weight:400;font-style:italic}.sec__ds{font-size:1.08rem;color:var(--w5);max-width:600px;line-height:1.85;font-weight:300}.sec__top{margin-bottom:clamp(3rem,6vw,5rem)}.sec__top--c{text-align:center;display:flex;flex-direction:column;align-items:center}
-.r{opacity:0;transform:translateY(50px);transition:opacity 1s var(--eo),transform 1s var(--eo)}.r.v{opacity:1;transform:translateY(0)}.rd1{transition-delay:.1s}.rd2{transition-delay:.2s}.rd3{transition-delay:.3s}
-.sv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}.sv{background:var(--s1);border-radius:20px;padding:2rem;border:1px solid var(--w04);overflow:hidden;transition:all .5s var(--eo);text-decoration:none;color:var(--w);display:block;position:relative}.sv:hover{border-color:var(--c10);transform:translateY(-6px);box-shadow:0 25px 70px -20px rgba(0,0,0,.5)}.sv::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--c),transparent);opacity:0;transition:opacity .5s}.sv:hover::before{opacity:1}.sv__tt{font-weight:700;font-size:1.05rem;letter-spacing:-.02em;margin-bottom:.4rem}.sv__tx{font-size:.85rem;color:var(--w5);line-height:1.7;font-weight:300}.sv__arrow{display:flex;align-items:center;gap:.3rem;margin-top:1rem;font-size:.75rem;font-weight:600;color:var(--c);opacity:0;transition:all .3s}.sv:hover .sv__arrow{opacity:1}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--w04);border-radius:24px;overflow:hidden}.stat{padding:3rem 2rem;text-align:center;border-right:1px solid var(--w04);transition:background .4s}.stat:last-child{border-right:0}.stat:hover{background:var(--w04)}.stat__n{font-weight:800;font-size:clamp(2.2rem,3.5vw,3.2rem);letter-spacing:-.04em;line-height:1;color:var(--c)}.stat__l{font-size:.8rem;color:var(--w3);margin-top:.5rem}
-.fgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;max-width:1000px;margin:0 auto}.fq{background:var(--s1);border-radius:16px;padding:1.8rem;border:1px solid var(--w04);transition:all .3s}.fq:hover{transform:translateY(-3px);border-color:var(--c10)}.fq__q{font-weight:700;font-size:.95rem;margin-bottom:.5rem}.fq__a{font-size:.85rem;color:var(--w5);line-height:1.8;font-weight:300}
-.eco{padding:clamp(5rem,8vw,7rem) 0;border-top:1px solid var(--w04);text-align:center}.eco__pills{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;max-width:900px;margin:0 auto}.eco__pill{display:flex;align-items:center;padding:.6rem 1.3rem;border-radius:100px;background:var(--w04);border:1px solid var(--w08);text-decoration:none;font-size:.82rem;font-weight:500;transition:all .4s var(--eo)}.eco__pill:hover{border-color:var(--w15);transform:translateY(-3px)}.eco__pill--active{background:var(--c06);border-color:rgba(16,185,129,.15)}
-.ft{border-top:1px solid var(--w04);padding:3rem 0 2rem}.ft__b{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;align-items:center}.ft__cp{font-size:.75rem;color:var(--w15)}.ft__cp a{color:var(--c);text-decoration:none;font-weight:500}
-.btt{position:fixed;bottom:2rem;right:2rem;width:48px;height:48px;border-radius:14px;background:var(--c);color:#fff;border:0;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:all .4s var(--eo);z-index:999;box-shadow:0 4px 24px var(--cg)}.btt.vi{opacity:1;visibility:visible}.btt:hover{transform:translateY(-3px)}.btt svg{width:16px;height:16px}
-@media(max-width:1024px){.sv-grid{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}}
-@media(max-width:768px){.nav__k{display:none}.nav__h{display:block}.nav__k.op{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(3,12,8,.97);backdrop-filter:blur(30px);padding:1.5rem;gap:.3rem;border-top:1px solid var(--w08)}.nav__dd{position:static;opacity:1;visibility:visible;transform:none;background:0;border:0;box-shadow:none;padding:0 0 0 1rem;min-width:0}.sv-grid{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--w04)}.stat:last-child{border-bottom:0}}
+:root{--d:#020a06;--s1:#071e10;--s2:#0a2a16;--s3:#0d361c;--em:#059669;--emg:rgba(5,150,105,.25);--em10:rgba(5,150,105,.1);--em06:rgba(5,150,105,.06);--em2:#34d399;--em3:#6ee7b7;--gold:#fbbf24;--goldg:rgba(251,191,36,.12);--w:#fff;--w7:rgba(255,255,255,.7);--w5:rgba(255,255,255,.5);--w3:rgba(255,255,255,.3);--w08:rgba(255,255,255,.08);--w04:rgba(255,255,255,.04);--fh:'Bricolage Grotesque',system-ui,sans-serif;--fd:'Crimson Pro',Georgia,serif;--fm:'JetBrains Mono',monospace;--eo:cubic-bezier(.16,1,.3,1)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px;overflow-x:hidden}body{font-family:var(--fh);color:var(--w);background:var(--d);line-height:1.6;-webkit-font-smoothing:antialiased}::selection{background:var(--em);color:#fff}.ctn{max-width:1440px;margin:0 auto;padding:0 clamp(1.5rem,5vw,4rem)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 0;transition:all .5s var(--eo)}.nav.s{background:rgba(2,10,6,.92);backdrop-filter:blur(40px) saturate(1.8);padding:.5rem 0;border-bottom:1px solid var(--w08)}.nav__i{display:flex;align-items:center;justify-content:space-between}.nav__l{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:#fff;font-weight:800;font-size:1.1rem;letter-spacing:-.03em}.nav__lm{width:36px;height:36px;background:linear-gradient(135deg,var(--em),var(--em2));border-radius:10px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 30px var(--emg)}.nav__lm svg{width:17px;height:17px}
+.nav__k{display:flex;list-style:none;gap:.15rem;align-items:center}.nav__k>li{position:relative}.nav__k>li>a{color:var(--w3);text-decoration:none;font-size:.75rem;font-weight:500;transition:all .3s;display:flex;align-items:center;gap:.3rem;padding:.4rem .65rem;border-radius:7px}.nav__k>li>a:hover{color:var(--em);background:var(--w04)}.nav__k>li>a svg{width:12px;height:12px;opacity:.4}
+.nav__dd{position:absolute;top:calc(100% + .4rem);left:50%;transform:translateX(-50%) translateY(8px);opacity:0;visibility:hidden;background:var(--s1);border:1px solid var(--w08);border-radius:14px;padding:.5rem;min-width:220px;transition:all .25s var(--eo);box-shadow:0 16px 50px rgba(0,0,0,.6);z-index:100}.nav__k>li:hover .nav__dd{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}.nav__dd a{display:block;padding:.5rem .7rem;border-radius:8px;text-decoration:none;color:var(--w5);font-size:.75rem;transition:all .2s}.nav__dd a:hover{background:var(--w04);color:#fff}.nav__dd-tx{font-size:.6rem;color:var(--w3);display:block}
+.nav__h{display:none;background:0;border:0;cursor:pointer;width:28px;height:28px;position:relative}.nav__h span{position:absolute;left:2px;width:24px;height:1.5px;background:#fff;transition:all .3s}.nav__h span:nth-child(1){top:8px}.nav__h span:nth-child(2){top:14px}.nav__h span:nth-child(3){top:20px}.nav__h.o span:nth-child(1){top:14px;transform:rotate(45deg)}.nav__h.o span:nth-child(2){opacity:0}.nav__h.o span:nth-child(3){top:14px;transform:rotate(-45deg)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:10rem 0 5rem}
+.hero__bg{position:absolute;inset:0}.hero__gr{position:absolute;inset:0;background:radial-gradient(ellipse 65% 50% at 20% 40%,rgba(5,150,105,.06),transparent 55%),radial-gradient(ellipse 45% 50% at 80% 55%,rgba(52,211,153,.03),transparent 50%),radial-gradient(circle at 50% 15%,rgba(251,191,36,.015),transparent 40%)}.hero__noise{position:absolute;inset:0;opacity:.015;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}.hero__grid{position:absolute;inset:0;background-image:linear-gradient(rgba(5,150,105,.006) 1px,transparent 1px),linear-gradient(90deg,rgba(5,150,105,.006) 1px,transparent 1px);background-size:80px 80px}
+.hero__c{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(3rem,5vw,5rem);align-items:center}
+.hero__left{max-width:680px}
+.hero__badge{display:inline-flex;align-items:center;gap:.5rem;margin-bottom:2rem;opacity:0;animation:hu .7s var(--eo) .1s forwards}.hero__bdot{width:6px;height:6px;border-radius:50%;background:var(--em);box-shadow:0 0 12px var(--em);animation:pls 2s ease-in-out infinite}@keyframes pls{0%,100%{box-shadow:0 0 8px var(--em)}50%{box-shadow:0 0 20px var(--em)}}
+.hero__btx{font-family:var(--fm);font-size:.6rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--em);padding:.35rem .9rem;border-radius:100px;border:1px solid var(--w08);background:var(--w04)}
+.hero__t{font-weight:800;font-size:clamp(3rem,6vw,5.5rem);line-height:.88;letter-spacing:-.055em;margin-bottom:1.5rem;opacity:0;animation:hu .7s var(--eo) .2s forwards}.hero__ta{background:linear-gradient(135deg,var(--em3),var(--em),var(--em2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero__sub{font-family:var(--fd);font-style:italic;font-size:clamp(1.1rem,1.8vw,1.45rem);color:var(--w5);margin-bottom:1.5rem;opacity:0;animation:hu .7s var(--eo) .3s forwards;font-weight:300;line-height:1.55}
+.hero__p{font-size:1rem;color:var(--w3);max-width:500px;line-height:1.85;font-weight:300;margin-bottom:2rem;opacity:0;animation:hu .7s var(--eo) .4s forwards}
+.hero__btns{display:flex;gap:.8rem;flex-wrap:wrap;opacity:0;animation:hu .7s var(--eo) .5s forwards}
+.bt{display:inline-flex;align-items:center;gap:.4rem;padding:.8rem 2rem;border-radius:100px;font-family:var(--fh);font-size:.85rem;font-weight:700;text-decoration:none;transition:all .4s var(--eo);border:0}.bt svg{width:14px;height:14px;transition:transform .3s}.bt:hover svg{transform:translateX(3px)}.bt--e{background:var(--em);color:#fff;box-shadow:0 0 30px rgba(5,150,105,.15)}.bt--e:hover{transform:translateY(-2px);box-shadow:0 6px 40px var(--emg)}.bt--g{background:var(--s2);color:var(--w5);border:1px solid var(--w08)}.bt--g:hover{color:#fff;transform:translateY(-2px)}
+.hero__nums{display:flex;gap:2rem;margin-top:2.5rem;opacity:0;animation:hu .7s var(--eo) .6s forwards}.hero__nv{font-weight:800;font-size:1.6rem;letter-spacing:-.04em;color:var(--em);line-height:1}.hero__nl{font-size:.62rem;color:var(--w3);margin-top:.15rem}
+
+/* URL Anatomy Card */
+.hero__right{opacity:0;animation:hu .9s var(--eo) .35s forwards}
+.uac{background:var(--s1);border-radius:22px;border:1px solid var(--w08);padding:2rem;position:relative;overflow:hidden}
+.uac::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--em),var(--gold),var(--em2),transparent)}
+.uac__lb{font-family:var(--fm);font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--em);margin-bottom:1.2rem}
+.uac__bar{background:var(--d);border-radius:12px;padding:.8rem 1rem;font-family:var(--fm);font-size:.78rem;color:var(--w5);margin-bottom:1.5rem;border:1px solid var(--w04);white-space:nowrap;overflow-x:auto;line-height:1.8}
+.uac__bar .p{color:var(--em)}.uac__bar .d{color:var(--gold)}.uac__bar .pa{color:var(--em2)}.uac__bar .q{color:var(--w3)}
+.uac__grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.uac__p{padding:.6rem .8rem;border-radius:8px;border:1px solid var(--w04);transition:background .3s}.uac__p:hover{background:var(--w04)}
+.uac__pl{font-family:var(--fm);font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:.1rem}
+.uac__pl--p{color:var(--em)}.uac__pl--d{color:var(--gold)}.uac__pl--pa{color:var(--em2)}.uac__pl--q{color:var(--w3)}
+.uac__pt{font-size:.68rem;color:var(--w5);font-weight:300;line-height:1.5}
+.uac__meta{display:flex;gap:1rem;margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--w04)}
+.uac__mi{flex:1;text-align:center}.uac__mn{font-family:var(--fm);font-weight:600;font-size:.9rem;color:var(--em)}.uac__ml{font-size:.55rem;color:var(--w3);margin-top:.1rem}
+@keyframes hu{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:translateY(0)}}
+
+/* TICKER */
+.ticker{border-top:1px solid var(--w04);border-bottom:1px solid var(--w04);padding:1rem 0;overflow:hidden}.ticker__w{display:flex;animation:ts 65s linear infinite;width:max-content}.ticker__i{display:flex;align-items:center;gap:1.8rem;padding:0 1.8rem;white-space:nowrap;font-size:.8rem;font-weight:500;color:var(--w3)}.ticker__d{width:3px;height:3px;border-radius:50%;background:var(--em)}@keyframes ts{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+.sec{padding:clamp(5rem,10vw,8rem) 0}.sec__lb{font-family:var(--fm);font-size:.58rem;letter-spacing:.25em;text-transform:uppercase;color:var(--em);font-weight:500;margin-bottom:.8rem}.sec__hd{font-weight:800;font-size:clamp(2rem,4vw,3.5rem);letter-spacing:-.04em;line-height:.95;margin-bottom:1rem}.sec__hd em{font-family:var(--fd);font-weight:400;font-style:italic;color:var(--em2)}.sec__ds{font-size:1rem;color:var(--w5);max-width:540px;line-height:1.8;font-weight:300}.sec__top{margin-bottom:clamp(2rem,4vw,3.5rem)}.sec__top--c{text-align:center;display:flex;flex-direction:column;align-items:center}
+.r{opacity:0;transform:translateY(35px);transition:opacity .7s var(--eo),transform .7s var(--eo)}.r.v{opacity:1;transform:translateY(0)}.rd1{transition-delay:.06s}.rd2{transition-delay:.12s}.rd3{transition-delay:.18s}.rd4{transition-delay:.24s}.rd5{transition-delay:.3s}.rd6{transition-delay:.36s}.rd7{transition-delay:.42s}
+
+/* MEGA TOPIC GRID */
+.tg{display:grid;grid-template-columns:repeat(4,1fr);gap:.9rem}
+.tc{background:var(--s1);border-radius:16px;padding:1.4rem;border:1px solid var(--w04);position:relative;overflow:hidden;transition:all .4s var(--eo);text-decoration:none;color:var(--w);display:block}
+.tc:hover{border-color:var(--em10);transform:translateY(-4px);box-shadow:0 18px 50px -12px rgba(0,0,0,.5)}
+.tc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--em),transparent);opacity:0;transition:opacity .3s}.tc:hover::before{opacity:1}
+.tc__em{font-size:1.4rem;margin-bottom:.8rem;display:block}
+.tc__tt{font-weight:700;font-size:.88rem;letter-spacing:-.01em;margin-bottom:.2rem}.tc__tx{font-size:.73rem;color:var(--w5);line-height:1.6;font-weight:300}
+.tc__count{font-family:var(--fm);font-size:.5rem;letter-spacing:.08em;color:var(--em);margin-top:.6rem;text-transform:uppercase}
+.tc--feat{grid-column:span 2;display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:center;padding:2rem;background:linear-gradient(135deg,var(--s1),var(--s2))}.tc--feat .tc__em{font-size:2.5rem;margin:0}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--w04);border-radius:20px;overflow:hidden}.stat{padding:2rem 1.2rem;text-align:center;border-right:1px solid var(--w04);transition:background .3s}.stat:last-child{border-right:0}.stat:hover{background:var(--w04)}.stat__n{font-weight:800;font-size:clamp(1.5rem,2.5vw,2.2rem);letter-spacing:-.04em;line-height:1;color:var(--em)}.stat__l{font-size:.65rem;color:var(--w3);margin-top:.3rem}
+
+/* HOW - Journey */
+.journey{display:grid;grid-template-columns:repeat(5,1fr);gap:.8rem;position:relative}
+.journey::before{content:'';position:absolute;top:28px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,var(--w08),var(--w08),transparent)}
+.js{text-align:center;position:relative}.js__n{width:56px;height:56px;border-radius:50%;background:var(--s2);border:1px solid var(--w08);display:flex;align-items:center;justify-content:center;margin:0 auto .8rem;font-family:var(--fm);font-size:1rem;font-weight:600;color:var(--em);position:relative;z-index:1;transition:all .4s}.js:hover .js__n{background:var(--em06);border-color:var(--em10)}.js__t{font-weight:700;font-size:.82rem;margin-bottom:.2rem}.js__x{font-size:.7rem;color:var(--w5);line-height:1.6;font-weight:300}
+
+/* FAQ */
+.fgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem;max-width:1100px;margin:0 auto}.fq{background:var(--s1);border-radius:14px;padding:1.3rem;border:1px solid var(--w04);transition:all .3s}.fq:hover{transform:translateY(-2px);border-color:var(--em10)}.fq__q{font-weight:700;font-size:.85rem;margin-bottom:.3rem}.fq__a{font-size:.78rem;color:var(--w5);line-height:1.7;font-weight:300}
+
+/* INTRO BLOCK */
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,5vw,5rem);align-items:center}
+.intro__text p{font-family:var(--fd);font-size:1.1rem;color:var(--w5);margin-bottom:1rem;line-height:1.9;font-weight:300}
+.intro__text p:first-child::first-letter{font-size:4rem;float:left;line-height:.82;margin-right:.4rem;color:var(--em);font-weight:600}
+.intro__card{background:var(--s1);border-radius:20px;border:1px solid var(--w08);padding:2rem;position:relative;overflow:hidden}
+.intro__card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+
+/* ECOSYSTEM */
+.eco{padding:clamp(4rem,7vw,6rem) 0;border-top:1px solid var(--w04);text-align:center}.eco__pills{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;max-width:1000px;margin:0 auto}.eco__pill{padding:.5rem 1rem;border-radius:100px;background:var(--w04);border:1px solid var(--w08);text-decoration:none;font-size:.75rem;font-weight:500;transition:all .3s}.eco__pill:hover{border-color:var(--w08);transform:translateY(-2px)}.eco__pill--active{background:var(--em06);border-color:rgba(5,150,105,.15)}
+
+/* FOOTER */
+.ft{border-top:1px solid var(--w04);padding:4rem 0 2rem}.ft__top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:2rem;margin-bottom:3rem}.ft__brand{max-width:280px}.ft__bt{font-size:.82rem;color:var(--w3);line-height:1.8;font-weight:300;margin-bottom:1rem}
+.ft__itf{display:inline-flex;align-items:center;gap:.4rem;padding:.45rem .9rem;border-radius:8px;background:var(--em06);border:1px solid rgba(5,150,105,.08);text-decoration:none;transition:all .3s}.ft__itf:hover{background:var(--em10)}.ft__itf-b{font-family:var(--fm);font-size:.48rem;letter-spacing:.1em;text-transform:uppercase;color:var(--em)}.ft__itf-n{font-weight:700;font-size:.85rem;color:#fff}
+.ft__c h4{font-family:var(--fm);font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:var(--w3);font-weight:500;margin-bottom:.9rem}.ft__c a{display:block;color:var(--w3);text-decoration:none;font-size:.78rem;margin-bottom:.4rem;font-weight:300;transition:color .3s}.ft__c a:hover{color:var(--em)}
+.ft__bot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding-top:1.5rem;border-top:1px solid var(--w04)}.ft__cp{font-size:.65rem;color:rgba(255,255,255,.12)}.ft__cp a{color:var(--em);text-decoration:none}
+.btt{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;border-radius:12px;background:var(--em);color:#fff;border:0;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:all .4s;z-index:999;box-shadow:0 4px 20px var(--emg)}.btt.vi{opacity:1;visibility:visible}.btt:hover{transform:translateY(-2px)}.btt svg{width:14px;height:14px}
+
+@media(max-width:1024px){.hero__c{grid-template-columns:1fr}.tg{grid-template-columns:repeat(2,1fr)}.tc--feat{grid-column:span 2}.stats{grid-template-columns:repeat(3,1fr)}.stat:nth-child(3){border-right:0}.journey{grid-template-columns:repeat(3,1fr);gap:1.5rem}.journey::before{display:none}.intro{grid-template-columns:1fr}.ft__top{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:768px){.nav__k{display:none}.nav__h{display:block}.nav__k.op{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(2,10,6,.97);backdrop-filter:blur(30px);padding:1rem;gap:.2rem;border-top:1px solid var(--w08)}.nav__dd{position:static;opacity:1;visibility:visible;transform:none;background:0;border:0;box-shadow:none;padding:0 0 0 .6rem;min-width:0}.tg{grid-template-columns:1fr}.tc--feat{grid-column:span 1;grid-template-columns:1fr}.journey{grid-template-columns:1fr 1fr}.fgrid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--w04)}.stat:last-child{border-bottom:0}.ft__top{grid-template-columns:1fr 1fr}.hero__nums{gap:1.2rem;flex-wrap:wrap}}
 </style>
 </head>
 <body>
 <nav class="nav" id="nav"><div class="ctn"><div class="nav__i">
 <a href="/" class="nav__l"><div class="nav__lm"><svg viewBox="0 0 20 20" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"><path d="M10 14l4-4M6 18a4 4 0 010-5.66l2-2M18 6a4 4 0 010 5.66l-2 2"/></svg></div>nettadresse.no</a>
-<ul class="nav__k" id="nk"><li><a href="/url-struktur"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M10 14l4-4M6 18a3 3 0 010-4l1-1M14 6a3 3 0 010 4l-1 1"/></svg>URL-struktur</a></li><li><a href="#temaer"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg>Temaer</a><div class="nav__dd"><a href="/domenenavn"><div>Domenenavn<span class="nav__dd-tx">Velg riktig domene</span></div></a><a href="/dns"><div>DNS<span class="nav__dd-tx">Domain Name System</span></div></a><a href="/https"><div>HTTPS<span class="nav__dd-tx">Sikkerhet og SEO</span></div></a><a href="/redirects"><div>Redirects<span class="nav__dd-tx">301, 302 og canonical</span></div></a></div></li><li><a href="/verktoy"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1"/></svg>Verktøy</a></li><li><a href="#faq"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="6"/><path d="M6 6a2 2 0 014 0c0 1.5-2 1.5-2 3M8 12h.01"/></svg>FAQ</a></li></ul>
+<ul class="nav__k" id="nk">
+<li><a href="/hva-er-nettadresse"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="6"/><path d="M6 6a2 2 0 014 0c0 1.5-2 1.5-2 3M8 12h.01"/></svg>Hva er nettadresse</a></li>
+<li><a href="/domenenavn"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="5.5"/><path d="M2 8h12M8 2.5c-2 2-2 9 0 11M8 2.5c2 2 2 9 0 11"/></svg>Domener</a>
+<div class="nav__dd">
+<a href="/domenenavn">Alt om domenenavn<span class="nav__dd-tx">Komplett guide</span></a>
+<a href="/domenenavn/velge-domene">Velge domene<span class="nav__dd-tx">Slik velger du riktig</span></a>
+<a href="/domenenavn/no-domene">.no-domener<span class="nav__dd-tx">Norske domener</span></a>
+<a href="/domenenavn/kjope-domene">Kjøpe domene<span class="nav__dd-tx">Steg for steg</span></a>
+<a href="/domenenavn/tld">TLD-typer<span class="nav__dd-tx">.no, .com, .org osv.</span></a>
+<a href="/domenenavn/whois">WHOIS<span class="nav__dd-tx">Domeneoppslag</span></a>
+</div></li>
+<li><a href="/dns"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="4" width="12" height="3" rx="1"/><rect x="2" y="9" width="12" height="3" rx="1"/><circle cx="5" cy="5.5" r=".5" fill="currentColor"/><circle cx="5" cy="10.5" r=".5" fill="currentColor"/></svg>DNS</a>
+<div class="nav__dd">
+<a href="/dns">Alt om DNS<span class="nav__dd-tx">Domain Name System</span></a>
+<a href="/dns/a-record">A-record<span class="nav__dd-tx">IP-adressepeker</span></a>
+<a href="/dns/cname">CNAME<span class="nav__dd-tx">Alias-record</span></a>
+<a href="/dns/mx-record">MX-record<span class="nav__dd-tx">E-post-peker</span></a>
+<a href="/dns/nameserver">Nameserver<span class="nav__dd-tx">DNS-server</span></a>
+</div></li>
+<li><a href="/url"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M7 11l4-4M5 13a3 3 0 010-4l1-1M11 3a3 3 0 010 4l-1 1"/></svg>URL</a>
+<div class="nav__dd">
+<a href="/url">Alt om URLer<span class="nav__dd-tx">Komplett guide</span></a>
+<a href="/url/url-struktur">URL-struktur<span class="nav__dd-tx">Anatomien til en URL</span></a>
+<a href="/url/seo-vennlige-urler">SEO-vennlige URLer<span class="nav__dd-tx">Best practices</span></a>
+<a href="/url/punycode">Punycode<span class="nav__dd-tx">Norske tegn i URLer</span></a>
+</div></li>
+<li><a href="/https"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="7" width="10" height="7" rx="2"/><path d="M5 7V5a3 3 0 016 0v2"/></svg>HTTPS</a></li>
+<li><a href="/epost"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="4" width="12" height="8" rx="2"/><path d="M2 4l6 5 6-5"/></svg>E-post</a></li>
+<li><a href="/ordliste"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 3h8M4 8h5M4 13h3"/></svg>Ordliste</a></li>
+</ul>
 <button class="nav__h" id="hb" aria-label="Meny"><span></span><span></span><span></span></button>
 </div></div></nav>
 
-<section class="hero"><div class="hero__bg"><div class="hero__gr"></div><div class="hero__noise"></div></div>
+<!-- HERO -->
+<section class="hero"><div class="hero__bg"><div class="hero__gr"></div><div class="hero__noise"></div><div class="hero__grid"></div></div>
 <div class="ctn"><div class="hero__c">
-<div class="hero__tag"><span>URLer påvirker SEO</span></div>
-<h1 class="hero__t">Forstå<br><span class='hero__ta'>nettadresser.</span></h1>
-<p class="hero__p">URL-struktur påvirker crawling, indeksering og rangering. Nettadresse.no er din komplette guide.</p>
-<div class="hero__btns"><a href="/url-struktur" class="bt bt--c">URL-struktur <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a href="/domenenavn" class="bt bt--g">Domenevalg</a></div>
+<div class="hero__left">
+<div class="hero__badge"><div class="hero__bdot"></div><div class="hero__btx">Norges største kunnskapsbase</div></div>
+<h1 class="hero__t">Alt om<br><span class="hero__ta">nettadresser</span><br>og domener.</h1>
+<p class="hero__sub">Fra domenevalg til DNS, URL-struktur, HTTPS og e-post — alt du trenger å vite om nettadresser.</p>
+<p class="hero__p">Nettadresse.no er Norges mest komplette guide til domener og nettadresser. Enten du skal registrere ditt første domene eller optimalisere URL-strukturen din for SEO.</p>
+<div class="hero__btns"><a href="/hva-er-domene" class="bt bt--e">Hva er et domene? <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a href="/ordliste" class="bt bt--g">Ordliste A–Å</a></div>
+<div class="hero__nums"><div><div class="hero__nv">50+</div><div class="hero__nl">Artikler</div></div><div><div class="hero__nv">8</div><div class="hero__nl">Temaklynger</div></div><div><div class="hero__nv">200+</div><div class="hero__nl">Begreper forklart</div></div></div>
+</div>
+<div class="hero__right"><div class="uac">
+<div class="uac__lb">Anatomien til en nettadresse</div>
+<div class="uac__bar"><span class="p">https://</span><span class="d">www.eksempel.no</span><span class="pa">/blogg/min-artikkel</span><span class="q">?ref=nyhetsbrev</span></div>
+<div class="uac__grid">
+<div class="uac__p"><div class="uac__pl uac__pl--p">Protokoll</div><div class="uac__pt">https:// sikrer kryptert forbindelse mellom bruker og server</div></div>
+<div class="uac__p"><div class="uac__pl uac__pl--d">Domene</div><div class="uac__pt">Nettadressen til nettstedet — ditt unike navn på internett</div></div>
+<div class="uac__p"><div class="uac__pl uac__pl--pa">Sti (path)</div><div class="uac__pt">Peker til en spesifikk side eller ressurs på nettstedet</div></div>
+<div class="uac__p"><div class="uac__pl uac__pl--q">Parameter</div><div class="uac__pt">Tilleggsinformasjon — sporing, filtrering eller sortering</div></div>
+</div>
+<div class="uac__meta">
+<div class="uac__mi"><div class="uac__mn">.no</div><div class="uac__ml">Norsk ccTLD</div></div>
+<div class="uac__mi"><div class="uac__mn">HTTPS</div><div class="uac__ml">Kryptert</div></div>
+<div class="uac__mi"><div class="uac__mn">SEO</div><div class="uac__ml">Vennlig URL</div></div>
+</div>
+</div></div>
 </div></div></section>
 
-<div class="ticker"><div class="ticker__wrap"><div class="ticker__item"><span class="ticker__dot"></span>URL-struktur</div><div class="ticker__item"><span class="ticker__dot"></span>Domenenavn</div><div class="ticker__item"><span class="ticker__dot"></span>DNS</div><div class="ticker__item"><span class="ticker__dot"></span>HTTPS</div><div class="ticker__item"><span class="ticker__dot"></span>Redirects 301/302</div><div class="ticker__item"><span class="ticker__dot"></span>Kanoniske URLer</div><div class="ticker__item"><span class="ticker__dot"></span>Permalinks</div><div class="ticker__item"><span class="ticker__dot"></span>Clean URLs</div><div class="ticker__item"><span class="ticker__dot"></span>Slugs</div><div class="ticker__item"><span class="ticker__dot"></span>Subdomene vs subfolder</div><div class="ticker__item"><span class="ticker__dot"></span>TLD</div><div class="ticker__item"><span class="ticker__dot"></span>ccTLD</div><div class="ticker__item"><span class="ticker__dot"></span>Query Parameters</div><div class="ticker__item"><span class="ticker__dot"></span>URL Encoding</div><div class="ticker__item"><span class="ticker__dot"></span>Punycode</div><div class="ticker__item"><span class="ticker__dot"></span>URL-struktur</div><div class="ticker__item"><span class="ticker__dot"></span>Domenenavn</div><div class="ticker__item"><span class="ticker__dot"></span>DNS</div><div class="ticker__item"><span class="ticker__dot"></span>HTTPS</div><div class="ticker__item"><span class="ticker__dot"></span>Redirects 301/302</div><div class="ticker__item"><span class="ticker__dot"></span>Kanoniske URLer</div><div class="ticker__item"><span class="ticker__dot"></span>Permalinks</div><div class="ticker__item"><span class="ticker__dot"></span>Clean URLs</div><div class="ticker__item"><span class="ticker__dot"></span>Slugs</div><div class="ticker__item"><span class="ticker__dot"></span>Subdomene vs subfolder</div><div class="ticker__item"><span class="ticker__dot"></span>TLD</div><div class="ticker__item"><span class="ticker__dot"></span>ccTLD</div><div class="ticker__item"><span class="ticker__dot"></span>Query Parameters</div><div class="ticker__item"><span class="ticker__dot"></span>URL Encoding</div><div class="ticker__item"><span class="ticker__dot"></span>Punycode</div></div></div>
+<!-- TICKER -->
+<div class="ticker"><div class="ticker__w">
+<div class="ticker__i"><span class="ticker__d"></span>Nettadresse</div><div class="ticker__i"><span class="ticker__d"></span>Domene</div><div class="ticker__i"><span class="ticker__d"></span>Domenenavn</div><div class="ticker__i"><span class="ticker__d"></span>DNS</div><div class="ticker__i"><span class="ticker__d"></span>URL-struktur</div><div class="ticker__i"><span class="ticker__d"></span>HTTPS</div><div class="ticker__i"><span class="ticker__d"></span>SSL-sertifikat</div><div class="ticker__i"><span class="ticker__d"></span>Redirect 301</div><div class="ticker__i"><span class="ticker__d"></span>Canonical</div><div class="ticker__i"><span class="ticker__d"></span>E-post domene</div><div class="ticker__i"><span class="ticker__d"></span>.no domene</div><div class="ticker__i"><span class="ticker__d"></span>TLD</div><div class="ticker__i"><span class="ticker__d"></span>Nameserver</div><div class="ticker__i"><span class="ticker__d"></span>WHOIS</div><div class="ticker__i"><span class="ticker__d"></span>Punycode</div><div class="ticker__i"><span class="ticker__d"></span>SPF DKIM DMARC</div><div class="ticker__i"><span class="ticker__d"></span>Clean URLs</div><div class="ticker__i"><span class="ticker__d"></span>Permalinks</div>
+<div class="ticker__i"><span class="ticker__d"></span>Nettadresse</div><div class="ticker__i"><span class="ticker__d"></span>Domene</div><div class="ticker__i"><span class="ticker__d"></span>Domenenavn</div><div class="ticker__i"><span class="ticker__d"></span>DNS</div><div class="ticker__i"><span class="ticker__d"></span>URL-struktur</div><div class="ticker__i"><span class="ticker__d"></span>HTTPS</div><div class="ticker__i"><span class="ticker__d"></span>SSL-sertifikat</div><div class="ticker__i"><span class="ticker__d"></span>Redirect 301</div><div class="ticker__i"><span class="ticker__d"></span>Canonical</div><div class="ticker__i"><span class="ticker__d"></span>E-post domene</div><div class="ticker__i"><span class="ticker__d"></span>.no domene</div><div class="ticker__i"><span class="ticker__d"></span>TLD</div><div class="ticker__i"><span class="ticker__d"></span>Nameserver</div><div class="ticker__i"><span class="ticker__d"></span>WHOIS</div><div class="ticker__i"><span class="ticker__d"></span>Punycode</div><div class="ticker__i"><span class="ticker__d"></span>SPF DKIM DMARC</div><div class="ticker__i"><span class="ticker__d"></span>Clean URLs</div><div class="ticker__i"><span class="ticker__d"></span>Permalinks</div>
+</div></div>
 
+<!-- INTRO -->
+<section class="sec"><div class="ctn"><div class="intro r">
+<div class="intro__text">
+<p>En nettadresse er den unike adressen som identifiserer et nettsted eller en spesifikk side på internett. Når du skriver inn en nettadresse i nettleseren din — for eksempel nettadresse.no — forteller du internett nøyaktig hvor du vil hen.</p>
+<p>Bak hver nettadresse ligger et domene. Et domene er navnet du eier og bruker som din digitale identitet. Det er det første en bedrift trenger for å bli synlig online — før e-post, før hjemmeside, før alt annet.</p>
+<p>Nettadresse.no gir deg alt du trenger å vite: fra hvordan du <a href="/domenenavn/velge-domene" style="color:var(--em)">velger riktig domene</a> til hvordan <a href="/dns" style="color:var(--em)">DNS fungerer</a>, fra <a href="/url/seo-vennlige-urler" style="color:var(--em)">SEO-vennlige URLer</a> til <a href="/epost" style="color:var(--em)">e-post på eget domene</a>.</p>
+</div>
+<div class="intro__card">
+<div style="font-family:var(--fm);font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem">Visste du at</div>
+<div style="font-weight:700;font-size:1.3rem;margin-bottom:1rem;line-height:1.3">Det finnes over <span style="color:var(--gold)">360 millioner</span> registrerte domener globalt</div>
+<div style="font-size:.85rem;color:var(--w5);line-height:1.7;font-weight:300;margin-bottom:1.5rem">Og over 800 000 .no-domener i Norge. Domenet ditt er din digitale eiendom — det kan verdsettes, selges og bygges verdi over tid.</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.8rem">
+<div style="text-align:center"><div style="font-weight:800;font-size:1.3rem;color:var(--em)">360M+</div><div style="font-size:.6rem;color:var(--w3)">Globale domener</div></div>
+<div style="text-align:center"><div style="font-weight:800;font-size:1.3rem;color:var(--em)">800K+</div><div style="font-size:.6rem;color:var(--w3)">.no-domener</div></div>
+<div style="text-align:center"><div style="font-weight:800;font-size:1.3rem;color:var(--em)">1500+</div><div style="font-size:.6rem;color:var(--w3)">TLD-typer</div></div>
+</div>
+</div>
+</div></div></section>
+
+<!-- MEGA TOPICS -->
+<section class="sec" style="border-top:1px solid var(--w04)"><div class="ctn">
+<div class="sec__top r"><div class="sec__lb">Utforsk temaene</div><h2 class="sec__hd">8 temaklynger,<br>50+ <em>artikler</em></h2><p class="sec__ds">Norges mest omfattende samling av kunnskap om nettadresser, domener, DNS, URL-struktur og alt som hører til.</p></div>
+<div class="tg">
+<a href="/hva-er-domene" class="tc tc--feat r"><div class="tc__em">🌐</div><div><h3 class="tc__tt">Hva er et domene?</h3><p class="tc__tx">Alt du trenger å vite om domener og nettadresser. Definisjoner, oppbygging, funksjon og betydning for din virksomhet.</p><div class="tc__count">Startpunktet → Les først</div></div></a>
+<a href="/domenenavn" class="tc r rd1"><div class="tc__em">🏷️</div><h3 class="tc__tt">Domenenavn</h3><p class="tc__tx">Velge, registrere, flytte og verdsette domener. TLD, ccTLD, .no og .com.</p><div class="tc__count">12 artikler</div></a>
+<a href="/dns" class="tc r rd2"><div class="tc__em">🗄️</div><h3 class="tc__tt">DNS</h3><p class="tc__tx">Domain Name System: A-record, CNAME, MX, nameserver og propagering.</p><div class="tc__count">7 artikler</div></a>
+<a href="/url" class="tc r rd3"><div class="tc__em">🔗</div><h3 class="tc__tt">URL-struktur</h3><p class="tc__tx">Anatomien til en nettadresse: sti, parametre, encoding og SEO.</p><div class="tc__count">8 artikler</div></a>
+<a href="/https" class="tc r rd4"><div class="tc__em">🔒</div><h3 class="tc__tt">HTTPS & SSL</h3><p class="tc__tx">Sikkerhet, kryptering, sertifikater, Let's Encrypt og HSTS.</p><div class="tc__count">5 artikler</div></a>
+<a href="/redirects" class="tc r rd5"><div class="tc__em">↪️</div><h3 class="tc__tt">Redirects</h3><p class="tc__tx">301, 302, canonical, redirect chains og SEO-implikasjoner.</p><div class="tc__count">5 artikler</div></a>
+<a href="/epost" class="tc r rd6"><div class="tc__em">📧</div><h3 class="tc__tt">E-post & domene</h3><p class="tc__tx">Epost på eget domene, MX-oppsett, SPF, DKIM og DMARC.</p><div class="tc__count">4 artikler</div></a>
+<a href="/ordliste" class="tc r rd7"><div class="tc__em">📖</div><h3 class="tc__tt">Ordliste A–Å</h3><p class="tc__tx">200+ begreper innen nettadresser og domener forklart.</p><div class="tc__count">Komplett referanse</div></a>
+</div></div></section>
+
+<!-- STATS -->
+<section class="sec" style="background:var(--s1)"><div class="ctn"><div class="stats r">
+<div class="stat"><div class="stat__n">360M+</div><div class="stat__l">Registrerte domener globalt</div></div>
+<div class="stat"><div class="stat__n">800K+</div><div class="stat__l">.no-domener i Norge</div></div>
+<div class="stat"><div class="stat__n">1500+</div><div class="stat__l">TLD-typer tilgjengelig</div></div>
+<div class="stat"><div class="stat__n">$872M</div><div class="stat__l">Dyreste domene (cars.com)</div></div>
+<div class="stat"><div class="stat__n">50+</div><div class="stat__l">Artikler på denne guiden</div></div>
+</div></div></section>
+
+<!-- JOURNEY -->
 <section class="sec"><div class="ctn">
-<div class="sec__top r"><div class="sec__lb">Temaer</div><h2 class="sec__hd">Utforsk <em>guiden</em></h2></div>
-<div class="sv-grid"><a href="/url-struktur" class="sv r"><h3 class="sv__tt">URL-struktur</h3><p class="sv__tx">Protokoll, domene, sti, parametre. Slik bygger du SEO-vennlige URLer.</p><div class="sv__arrow">Les mer <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></div></a><a href="/domenenavn" class="sv r rd1"><h3 class="sv__tt">Domenenavn</h3><p class="sv__tx">TLD, ccTLD, nøkkelord i domene, merkevarebygging og domenevalg.</p><div class="sv__arrow">Les mer <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></div></a><a href="/dns" class="sv r rd2"><h3 class="sv__tt">DNS</h3><p class="sv__tx">Domain Name System — domener til IP-adresser. A-records, CNAME, MX.</p><div class="sv__arrow">Les mer <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></div></a><a href="/https" class="sv r rd3"><h3 class="sv__tt">HTTPS & SSL</h3><p class="sv__tx">HTTPS som rangeringsfaktor. SSL-sertifikater og kryptering.</p><div class="sv__arrow">Les mer <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></div></a><a href="/redirects" class="sv r rd0"><h3 class="sv__tt">Redirects</h3><p class="sv__tx">301 vs 302. Kanoniske URLer. Redirect chains og loops.</p><div class="sv__arrow">Les mer <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></div></a><a href="/seo-urler" class="sv r rd1"><h3 class="sv__tt">SEO-vennlige URLer</h3><p class="sv__tx">Clean URLs, slug-optimalisering, lengde og lesbarhet.</p><div class="sv__arrow">Les mer <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M7 3l3 3-3 3"/></svg></div></a></div>
-</div></section>
+<div class="sec__top sec__top--c r"><div class="sec__lb">Domeneveien</div><h2 class="sec__hd">Fra idé til <em>synlighet</em></h2><p class="sec__ds">De fem stegene fra du bestemmer deg for et domene til du er synlig online.</p></div>
+<div class="journey">
+<div class="js r"><div class="js__n">01</div><h3 class="js__t">Velg domene</h3><p class="js__x">Finn det perfekte <a href="/domenenavn/velge-domene" style="color:var(--em)">domenenavnet</a> for din merkevare</p></div>
+<div class="js r rd1"><div class="js__n">02</div><h3 class="js__t">Registrer</h3><p class="js__x"><a href="/domenenavn/kjope-domene" style="color:var(--em)">Kjøp domenet</a> hos en norsk leverandør</p></div>
+<div class="js r rd2"><div class="js__n">03</div><h3 class="js__t">Sett opp DNS</h3><p class="js__x">Pek <a href="/dns" style="color:var(--em)">DNS</a> til hosting og <a href="/epost" style="color:var(--em)">e-post</a></p></div>
+<div class="js r rd3"><div class="js__n">04</div><h3 class="js__t">Aktiver HTTPS</h3><p class="js__x"><a href="/https" style="color:var(--em)">SSL-sertifikat</a> for sikker forbindelse</p></div>
+<div class="js r rd4"><div class="js__n">05</div><h3 class="js__t">Optimaliser</h3><p class="js__x"><a href="/url/seo-vennlige-urler" style="color:var(--em)">SEO-vennlige nettadresser</a> og struktur</p></div>
+</div></div></section>
 
-<section class="sec" style="background:var(--s1)"><div class="ctn"><div class="stats r"><div class="stat"><div class="stat__n">63%</div><div class="stat__l">Foretrekker korte URLer</div></div><div class="stat"><div class="stat__n">301</div><div class="stat__l">Permanent redirect</div></div><div class="stat"><div class="stat__n">443</div><div class="stat__l">HTTPS-port</div></div><div class="stat"><div class="stat__n">253</div><div class="stat__l">Maks tegn i domene</div></div></div></div></section>
+<!-- FAQ -->
+<section class="sec" style="border-top:1px solid var(--w04)" id="faq"><div class="ctn">
+<div class="sec__top sec__top--c r"><div class="sec__lb">FAQ</div><h2 class="sec__hd">Vanlige spørsmål om<br><em>nettadresser og domener</em></h2></div>
+<div class="fgrid">
+<div class="fq r"><h3 class="fq__q">Hva er en nettadresse?</h3><p class="fq__a">En nettadresse (URL) er den unike adressen til en side på internett, for eksempel https://nettadresse.no. Den består av protokoll, domene, sti og eventuelt parametre.</p></div>
+<div class="fq r rd1"><h3 class="fq__q">Hva er et domene?</h3><p class="fq__a">Et domene er det unike navnet som identifiserer et nettsted — for eksempel «nettadresse.no». Det er din digitale adresse og merkevare på internett.</p></div>
+<div class="fq r"><h3 class="fq__q">Hva er forskjellen på nettadresse og domene?</h3><p class="fq__a">Domenet er selve navnet (nettadresse.no), mens nettadressen er den komplette URLen inkludert protokoll og sti (https://nettadresse.no/domenenavn).</p></div>
+<div class="fq r rd1"><h3 class="fq__q">Hvordan registrerer jeg et domene?</h3><p class="fq__a">Velg en domeneleverandør (som Domeneshop, One.com eller Namecheap), søk etter ønsket domene og fullfør registreringen. .no-domener krever norsk tilknytning.</p></div>
+<div class="fq r"><h3 class="fq__q">Hva er DNS?</h3><p class="fq__a">Domain Name System er internettets telefonkatalog. DNS oversetter menneskelesbare domener (nettadresse.no) til IP-adresser (192.168.1.1) som datamaskiner bruker.</p></div>
+<div class="fq r rd1"><h3 class="fq__q">Hva er HTTPS?</h3><p class="fq__a">HTTPS er den sikre versjonen av HTTP. Det krypterer data mellom nettleser og server. Google bekreftet HTTPS som rangeringsfaktor i 2014.</p></div>
+<div class="fq r"><h3 class="fq__q">Trenger jeg eget domene for e-post?</h3><p class="fq__a">Absolutt. E-post på eget domene (post@dinbedrift.no) bygger profesjonalitet og tillit. Det krever MX-record i DNS og en e-postleverandør.</p></div>
+<div class="fq r rd1"><h3 class="fq__q">Hva er en 301-redirect?</h3><p class="fq__a">En permanent videresending av én nettadresse til en annen. Overfører ~90% av SEO-verdien. Brukes ved domenebytte, URL-endringer eller sammenslåing av sider.</p></div>
+</div></div></section>
 
-<section class="sec" id="faq"><div class="ctn">
-<div class="sec__top sec__top--c r"><div class="sec__lb">FAQ</div><h2 class="sec__hd">Spørsmål og <em>svar</em></h2></div>
-<div class="fgrid"><div class="fq r"><h3 class="fq__q">Hva er en URL?</h3><p class="fq__a">Uniform Resource Locator — en unik adresse som identifiserer en ressurs på internett.</p></div><div class="fq r rd1"><h3 class="fq__q">Påvirker URL-struktur SEO?</h3><p class="fq__a">Ja. Google anbefaler korte, beskrivende URLer med relevante nøkkelord.</p></div><div class="fq r"><h3 class="fq__q">Hva er 301 vs 302?</h3><p class="fq__a">301 er permanent redirect (overfører SEO). 302 er midlertidig (beholder original).</p></div><div class="fq r rd1"><h3 class="fq__q">www eller ikke?</h3><p class="fq__a">Spiller ingen rolle. Velg én og redirect den andre.</p></div><div class="fq r"><h3 class="fq__q">Hva er canonical URL?</h3><p class="fq__a">En tag som forteller Google hvilken URL-versjon som er foretrukket ved duplikatinnhold.</p></div><div class="fq r rd1"><h3 class="fq__q">Hva er DNS?</h3><p class="fq__a">Oversetter domenenavn til IP-adresser som datamaskiner forstår.</p></div></div>
-</div></section>
-
+<!-- ECOSYSTEM -->
 <section class="eco"><div class="ctn"><div class="r">
 <div class="sec__lb" style="text-align:center">Økosystem</div>
-<h2 class="sec__hd" style="text-align:center;margin-bottom:1rem">En del av <em style="font-family:var(--fd)"><a href="https://xn--seobyr-nua.com" target="_blank" style="color:#c8ff00;text-decoration:none">seobyrå.com</a></em></h2>
-<p style="font-size:1rem;color:var(--w5);max-width:600px;margin:0 auto 2.5rem;line-height:1.8;font-weight:300;text-align:center">Kunnskapsportal i nettverket til Seobyrå.com — Norges ledende SEO- og AEO-byrå.</p>
+<h2 class="sec__hd" style="text-align:center;margin-bottom:.8rem;font-size:clamp(1.5rem,3vw,2.5rem)">En del av <em style="font-family:var(--fd)"><a href="https://xn--seobyr-nua.com" target="_blank" style="color:#c8ff00;text-decoration:none">seobyrå.com</a></em></h2>
+<p style="font-size:.92rem;color:var(--w5);max-width:540px;margin:0 auto 2rem;line-height:1.7;font-weight:300;text-align:center">Kunnskapsportal i Norges største SEO-nettverk.</p>
 <div class="eco__pills">
-<a href="https://seoai.no" target="_blank" rel="noopener" class="eco__pill" style="color:#e11d48">seoai.no</a>
-<a href="https://ai-seo.no" target="_blank" rel="noopener" class="eco__pill" style="color:#f97316">ai-seo.no</a>
-<a href="https://organisksynlighet.no" target="_blank" rel="noopener" class="eco__pill" style="color:#10b981">organisksynlighet.no</a>
-<a href="https://xn--organisksk-8cb.no" target="_blank" rel="noopener" class="eco__pill" style="color:#84cc16">organisksøk.no</a>
-<a href="https://organisktrafikk.no" target="_blank" rel="noopener" class="eco__pill" style="color:#f59e0b">organisktrafikk.no</a>
-<a href="https://xn--ai-sk-yua.no" target="_blank" rel="noopener" class="eco__pill" style="color:#06b6d4">ai-søk.no</a>
-<a href="https://xn--skeoptimalisering-00b.no" target="_blank" rel="noopener" class="eco__pill" style="color:#8b5cf6">søkeoptimalisering.no</a>
-<a href="https://xn--skemotor-54a.com" target="_blank" rel="noopener" class="eco__pill" style="color:#0ea5e9">søkemotor.com</a>
-<a href="https://sitemap.no" target="_blank" rel="noopener" class="eco__pill" style="color:#3b82f6">sitemap.no</a>
-<a href="https://indeksering.no" target="_blank" rel="noopener" class="eco__pill" style="color:#14b8a6">indeksering.no</a>
-<a href="https://pagespeed.no" target="_blank" rel="noopener" class="eco__pill" style="color:#f97316">pagespeed.no</a>
-<a href="https://mobilvennlig.no" target="_blank" rel="noopener" class="eco__pill" style="color:#d946ef">mobilvennlig.no</a>
-<a href="https://nettadresse.no" target="_blank" rel="noopener" class="eco__pill" style="color:#10b981">nettadresse.no</a>
-<a href="https://schema.no" target="_blank" rel="noopener" class="eco__pill" style="color:#6366f1">schema.no</a>
-<a href="https://xn--seobyr-nua.com" target="_blank" rel="noopener" class="eco__pill" style="color:#c8ff00">seobyrå.com</a>
-<span class="eco__pill eco__pill--active" style="color:#10b981;font-weight:700">nettadresse.no ✓</span></div>
-</div></div></section>
+<a href="https://seoai.no" target="_blank" class="eco__pill" style="color:#e11d48">seoai.no</a>
+<a href="https://ai-seo.no" target="_blank" class="eco__pill" style="color:#f97316">ai-seo.no</a>
+<a href="https://organisksynlighet.no" target="_blank" class="eco__pill" style="color:#10b981">organisksynlighet.no</a>
+<a href="https://xn--organisksk-8cb.no" target="_blank" class="eco__pill" style="color:#84cc16">organisksøk.no</a>
+<a href="https://organisktrafikk.no" target="_blank" class="eco__pill" style="color:#f59e0b">organisktrafikk.no</a>
+<a href="https://xn--ai-sk-yua.no" target="_blank" class="eco__pill" style="color:#06b6d4">ai-søk.no</a>
+<a href="https://xn--skeoptimalisering-00b.no" target="_blank" class="eco__pill" style="color:#8b5cf6">søkeoptimalisering.no</a>
+<a href="https://xn--skemotor-54a.com" target="_blank" class="eco__pill" style="color:#0ea5e9">søkemotor.com</a>
+<a href="https://sitemap.no" target="_blank" class="eco__pill" style="color:#3b82f6">sitemap.no</a>
+<a href="https://indeksering.no" target="_blank" class="eco__pill" style="color:#14b8a6">indeksering.no</a>
+<a href="https://pagespeed.no" target="_blank" class="eco__pill" style="color:#f97316">pagespeed.no</a>
+<a href="https://mobilvennlig.no" target="_blank" class="eco__pill" style="color:#d946ef">mobilvennlig.no</a>
+<a href="https://schema.no" target="_blank" class="eco__pill" style="color:#6366f1">schema.no</a>
+<a href="https://xn--seobyr-nua.com" target="_blank" class="eco__pill" style="color:#c8ff00">seobyrå.com</a>
+<span class="eco__pill eco__pill--active" style="color:#059669;font-weight:700">nettadresse.no ✓</span>
+</div></div></div></section>
 
-<footer class="ft"><div class="ctn"><div class="ft__b"><div class="ft__cp">&copy; 2026 nettadresse.no &mdash; <a href="https://it-firma.no" target="_blank" rel="noopener">IT-FIRMA</a></div></div></div></footer>
+<!-- FOOTER -->
+<footer class="ft"><div class="ctn">
+<div class="ft__top">
+<div class="ft__brand"><div style="display:flex;align-items:center;gap:.6rem;margin-bottom:1rem"><div class="nav__lm"><svg viewBox="0 0 20 20" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"><path d="M10 14l4-4M6 18a4 4 0 010-5.66l2-2M18 6a4 4 0 010 5.66l-2 2"/></svg></div><span style="font-weight:800;font-size:1.1rem">nettadresse.no</span></div>
+<p class="ft__bt">Norges mest komplette guide til nettadresser og domener. 50+ artikler. Gratis.</p>
+<a href="https://it-firma.no" target="_blank" class="ft__itf"><div><div class="ft__itf-b">Et prosjekt av</div><div class="ft__itf-n">IT-FIRMA</div></div></a></div>
+<div class="ft__c"><h4>Domener</h4><a href="/hva-er-domene">Hva er et domene</a><a href="/domenenavn">Domenenavn</a><a href="/domenenavn/velge-domene">Velge domene</a><a href="/domenenavn/no-domene">.no-domener</a><a href="/domenenavn/kjope-domene">Kjøpe domene</a><a href="/domenenavn/tld">TLD-typer</a><a href="/domenenavn/whois">WHOIS</a></div>
+<div class="ft__c"><h4>Teknisk</h4><a href="/dns">DNS</a><a href="/dns/a-record">A-record</a><a href="/dns/nameserver">Nameserver</a><a href="/https">HTTPS & SSL</a><a href="/redirects">Redirects</a><a href="/redirects/canonical">Canonical</a></div>
+<div class="ft__c"><h4>URL & E-post</h4><a href="/url">URL-struktur</a><a href="/url/seo-vennlige-urler">SEO-vennlige URLer</a><a href="/url/punycode">Punycode</a><a href="/epost">E-post & domene</a><a href="/epost/spf-dkim-dmarc">SPF, DKIM, DMARC</a></div>
+<div class="ft__c"><h4>Ressurser</h4><a href="/ordliste">Ordliste A–Å</a><a href="/seo-guide">SEO-guide</a><a href="/verktoy">Verktøy</a><a href="/www-vs-ikke-www">www vs ikke-www</a><a href="/om-oss">Om oss</a><a href="/personvern">Personvern</a></div>
+</div>
+<div class="ft__bot"><div class="ft__cp">&copy; 2026 Nettadresse.no &mdash; <a href="https://it-firma.no" target="_blank">IT-FIRMA</a></div></div>
+</div></footer>
+
 <button class="btt" id="btt" aria-label="Til toppen"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M8 13V3M4 7l4-4 4 4"/></svg></button>
+
 <script>
 const nav=document.getElementById('nav'),btt=document.getElementById('btt');
 window.addEventListener('scroll',()=>{nav.classList.toggle('s',scrollY>60);btt.classList.toggle('vi',scrollY>500)});
@@ -99,10 +284,10 @@ btt.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
 const hb=document.getElementById('hb'),nk=document.getElementById('nk');
 hb.addEventListener('click',()=>{hb.classList.toggle('o');nk.classList.toggle('op')});
 nk.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nk.classList.remove('op');hb.classList.remove('o')}));
-const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');obs.unobserve(x.target)}})},{threshold:.06,rootMargin:'0px 0px -40px 0px'});
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');obs.unobserve(x.target)}})},{threshold:.05,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.r').forEach(el=>obs.observe(el));
-document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)scrollTo({top:t.getBoundingClientRect().top+scrollY-80,behavior:'smooth'})});});
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"nettadresse.no","url":"https://nettadresse.no","description":"Komplett guide til nettadresser: URL-struktur, domenevalg, redirects, DNS og SEO-vennlige URLer.","inLanguage":"nb-NO"}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hva er en URL?","acceptedAnswer":{"@type":"Answer","text":"Uniform Resource Locator — en unik adresse som identifiserer en ressurs på internett."}},{"@type":"Question","name":"Påvirker URL-struktur SEO?","acceptedAnswer":{"@type":"Answer","text":"Ja. Google anbefaler korte, beskrivende URLer med relevante nøkkelord."}},{"@type":"Question","name":"Hva er 301 vs 302?","acceptedAnswer":{"@type":"Answer","text":"301 er permanent redirect (overfører SEO). 302 er midlertidig (beholder original)."}}]}</script>
-</body></html>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Nettadresse.no","url":"https://nettadresse.no","description":"Norges mest komplette guide til nettadresser og domener.","inLanguage":"nb-NO","publisher":{"@type":"Organization","name":"IT-FIRMA","url":"https://it-firma.no"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hva er en nettadresse?","acceptedAnswer":{"@type":"Answer","text":"En nettadresse (URL) er den unike adressen til en side på internett. Den består av protokoll, domene, sti og eventuelt parametre."}},{"@type":"Question","name":"Hva er et domene?","acceptedAnswer":{"@type":"Answer","text":"Et domene er det unike navnet som identifiserer et nettsted — din digitale adresse og merkevare på internett."}},{"@type":"Question","name":"Hva er forskjellen på nettadresse og domene?","acceptedAnswer":{"@type":"Answer","text":"Domenet er selve navnet (nettadresse.no), mens nettadressen er den komplette URLen inkludert protokoll og sti."}},{"@type":"Question","name":"Hva er DNS?","acceptedAnswer":{"@type":"Answer","text":"Domain Name System oversetter menneskelesbare domener til IP-adresser som datamaskiner bruker."}},{"@type":"Question","name":"Hva er HTTPS?","acceptedAnswer":{"@type":"Answer","text":"HTTPS krypterer data mellom nettleser og server. Google bekreftet HTTPS som rangeringsfaktor i 2014."}}]}</script>
+</body>
+</html>
